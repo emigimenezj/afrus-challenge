@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Afrus Challenge</title>
+</head>
+<body>
+
+    <h1> Afrus Challenge </h1>
+
+    <h3> Instrucciones </h3>
+    <p>Para poder correr las funciones de cada ejercicio que realicé hay que ir a la consola presionando F12 y después clickeando en la pestaña Consola.</p>
+
+    <h3>Ejercicio 1</h3>
+    <p>La función se llama <b>multiply</b> y espera recibir 2 números.</p>
+    <p>Ejemplo: multiply(2,3)</p>
+
+    <h3>Ejercicio 2</h3>
+    <p>Dejo una lista con un ejemplo de cada función disponible que resuelve cada punto del ejercicio:</p>
+    <ul>
+        <li>pokemonsPerType('normal')</li>
+        <li>pokemonsOfTwoTypes('normal', 'fire')</li>
+        <li>pokemonNumber('pikachu')</li>
+        <li>pokemonBaseStats('pikachu')</li>
+        <li>pokemonsOrderedBy([1,2,3,4,5], 'weight')</li>
+        <li>pokemonHasType(25, 'fire')</li>
+    </ul>
+    <p>Con hacer copy & paste en la consola alcanza para probar.</p>
+
+    <h3>Ejercicio 3</h3>
+
+    <p>La función es <b>checkPassword</b> y espera recibir un string.</p>
+    <p>Para usar esta función desde la consola hay que descomentar la línea de return que dice "Solución para el ejercicio 3" en el código, ya que tuve que hacer una leve modificación para la solución del ejercicio 5. </p>
+    <p>Por defecto, esta solución <b>no funciona bien</b> sin hacer modificaciones en el código.</p>
+
+    <h3>Ejercicio 4</h3>
+    <p>La función es <b>arrayStats</b> y espera recibir un arreglo de números.</p>
+    <p>Se puede usar en consola con el siguiente ejemplo: arrayStats([1,100])</p>
+
+
+    <h3>Ejercicio 5</h3>
+
+    <p>Este ejercicio usa una modificación del ejercicio 3, si se cambió el código para probar el ejercicio 3 por consola, esta solución no funcionará correctamente. Es necesario que quede descomentada la línea que dice "Solución para el ejercicio 5" para que todo funcione correctamente.</p>
+    <p>Por defecto, esta solución funciona bien desde el principio.</p>
+
+    <form>
+        <label>
+            Password:
+            <input id="pw" type="text" placeholder="Password">
+        </label>
+        <div id="cond1">Tiene al menos 16 caracteres </div>
+        <div id="cond2">Tiene minúsculas </div>
+        <div id="cond3">Tiene mayúsculas </div>
+        <div id="cond4">No tiene letras, números ni caracteres especiales iguales consecutivos </div>
+        <div id="cond5">Tiene al menos 4 números </div>
+        <div id="cond6">Tiene al menos 2 caracteres especiales </div>
+        <div id="cond7">No tiene caracteres especiales repetidos </div>
+        <div id="cond8">No tiene caracteres especiales diferentes consecutivos </div>
+        <div id="cond9">No tiene 0 </div>
+        <div id="cond10">No tiene espacios </div>
+    </form>
+    <h3>Ejercicio 6</h3>
+    <form>
+        <label>
+            Pokemon:
+            <input id="pokemon" type="text" placeholder="Password">
+            <button id="btn" type="submit">Submit</button>
+        </label>
+        <div id="container">
+            <div class="item">
+                <div class="item-header">Nombre:</div>
+                <div id="name"></div>
+            </div>
+            <div class="item">
+                <div class="item-header">Número:</div>
+                <div id="id"></div>
+            </div>
+            <div class="item">
+                <div class="item-header">Tipos:</div>
+                <div id="types"></div>
+            </div>
+            <div class="item">
+                <div class="item-header">Peso:</div>
+                <div id="weight"></div>
+            </div>
+            <div class="item">
+                <div class="item-header">Altura:</div>
+                <div id="height"></div>
+            </div>
+            <div class="item">
+                <div class="item-header">Imagen:</div>
+                <img id="sprites" src="" alt="">
+            </div>
+        </div>
+    </form>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+<script src="main.js"></script>
+<style>
+    body {
+        font-family: Monospaced, serif;
+    }
+    #container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+    .item div {
+        margin: 10px;
+    }
+    .item-header {
+        font-weight: bold;
+    }
+    img {
+        border: 1px solid black;
+    }
+</style>
+</html>
